@@ -1,6 +1,97 @@
 @import 'fonts';
+@import 'color';
+@import 'mixin';
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
+  font-family: 'Roboto', sans-serif;
+  // background-color: cornflowerblue;
+}
+
+.hero {
+  background-color: $red!important;
+  padding-bottom: 10vh;
+  .navbar-start {
+    text-align: center;
+  }
+  ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        margin: 1vw;
+          a {
+              color: white;
+              &:hover{
+                font-weight: bold;
+              }
+              .nav-item{
+                text-align: center;
+                margin: 0 auto;
+              }
+          }
+      }
+  }
+}
+
+.falcon {
+  margin: -13vh auto;
+}
+
+.howitwork {
+  .content.has-text-centered {
+    margin-bottom: 40px;
+  }
+  .title.is-4 {
+    margin: 10px;
+  }
+}
+
+.benefits {
+  background-color: $grey;
+  padding: 40px 0;
+  margin-bottom: 0;
+  .column {
+    text-align: center;
+    @include from($tablet) {
+      text-align: left;
+    }
+    
+  }
+  .content {
+    text-align: left;
+    margin-top: 30px;
+    
+  }
+
+  .container.small {
+    max-width:900px!important;
+    margin: 0 auto;
+
+    .columns:nth-child(odd) {
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      .content{
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $blue;
+  color:white;
+  padding-bottom: 180px;  
+
+  ul {
+    display: inline-block;
+    margin: 0 3vw;
+    text-align: center;
+
+    .is-5 {font-weight: bold;}
+  }
+  .tile.is-vertical {
+    text-align: center;
+  }
 }
