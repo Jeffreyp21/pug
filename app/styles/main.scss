@@ -12,7 +12,11 @@ body {
 
 .hero {
   background-color: $red!important;
-  padding-bottom: 10vh;
+  padding-bottom: 6vh;
+  @media screen and (min-width: $tablet) { 
+    padding-bottom: 10vh;
+    max-width: 400px;
+  }
   .hero-body{padding: 1rem 1.5rem 3;}
   .navbar-start {
     text-align: center;
@@ -42,7 +46,11 @@ body {
 }
 
 .falcon {
-  margin: -13vh auto;
+  margin: -18vh auto;
+  @media screen and (min-width: $tablet) { 
+    margin: -13vh auto;
+    max-width: 400px;
+  }
 }
 
 .howitwork {
