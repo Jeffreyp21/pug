@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
   // background-color: cornflowerblue;
 }
 
@@ -66,23 +67,31 @@ body {
   padding: 40px 0;
   margin-bottom: 0;
   .is-two-fifths{
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     @media screen and (min-width: $tablet) { 
+      margin-bottom: 80px;
       max-width: 400px;
     }
   }
   .column {
-    text-align: center;
-    
+    text-align: left;
+   
+    @media screen and (min-width: $tablet) { 
+      text-align: center;
+    }
   }
   img{
-    max-width: 279px;
+    width: 100%;
     margin: 0 auto;
+    @media screen and (min-width: $tablet) { 
+      max-width: 279px;
+    }
   }
   .content {
-    margin-top: 30px;
+    margin-top: 0;
     @media screen and (min-width: $tablet) { 
       max-width: 480px;
+      margin-top: 30px;
     }
   }
 
@@ -91,7 +100,11 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 
+    .columns{
+      margin-bottom: 50px;
+    }
     .columns:nth-child(odd) .content{
+      text-align: left!important;
       @media screen and (min-width: $tablet) { 
         text-align: left!important;
       }
@@ -102,6 +115,7 @@ body {
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
       .content{
+        text-align: left!important;
         -moz-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
@@ -116,13 +130,19 @@ body {
 footer {
   background-color: $blue;
   color:white;
-  padding:40px 0 180px;  
-
+  padding:40px 15px; 
+  @media screen and (min-width: $tablet) { 
+    padding:30px 0 180px; 
+  } 
 
   .links {
     display: inline-block;
-    margin: 0 2.5%;
     text-align: left;
+    width: 100%;
+    @media screen and (min-width: $tablet) { 
+      margin: 0 2.5%;
+      width: auto
+    }
 
     .is-5 {
       font-weight: bold;
@@ -136,10 +156,15 @@ footer {
     }
   }
   .tile.is-vertical {
-    text-align: center;
-
+    text-align: left;
+    @media screen and (min-width: $tablet) { 
+      text-align: center;
+    }
     img{
-      padding-left: 30px;
+      margin: 0;
+      @media screen and (min-width: $tablet) { 
+        padding-left: 30px;
+      }
     }
   }
   .tile.is-vertical .is-8{
