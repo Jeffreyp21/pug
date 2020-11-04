@@ -1,0 +1,86 @@
+{
+    "data": {
+        "informations" : {
+            "test":"test",
+            "lang":"francais"
+        },
+        "hero" : {
+            "title": "Choose your side",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+            "links":[
+                {"title":"jewelery", "url":"#"},
+                {"title":"books", "url":"#"},
+                {"title":"gorcery", "url":"#"},
+                {"title":"movies", "url":"#"}
+            ]
+        },
+        "howitwork" : {
+            "title": "How it work",
+            "text": "Quiere la boca exhausta vid, kiwi, pina y fugaz jamon. Fabio me exige, sin tapujos, que anada cerveza al whisky. Jovencillo emponzonado de whisky,¡Qué ",
+            "items": [
+                {
+                    "img": "./images/Rectangle-11.png",
+                    "title": "Mckenna",
+                    "desc": "Non corporis voluptas ut necessitatibus aut eaque qui ea magni."
+                },
+                {
+                    "img": "./images/Rectangle-12.png",
+                    "title": "Eleonore",
+                    "desc": "Nesciunt commodi ut in et quasi doloribus quasi voluptate."
+                },
+                {
+                    "img": "./images/Rectangle-13.png",
+                    "title": "Nolan",
+                    "desc": "Et accusantium unde"
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Benefits",
+            "text": "Sed ut perspicaiatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+            "blocksides": [
+                {
+                    "img": "./images/benefit-1.png",
+                    "desc": "Voluptates quae sunt dolore in omnis nihil. Animi sapiente et assumenda recusandae a reiciendis aspernatur molestiae asperiores. Magnam consectetur qui dolore at praesentium odio ut aperiam et. Doloremque eveniet eos sint suscipit consequatur. Assumenda aliquam cupiditate excepturi."
+                },
+                {
+                    "img": "./images/benefit-2.png",
+                    "desc": "Labore officia tempora in tempore. Suscipit deleniti architecto. Veniam nesciunt rerum sequi error ut omnis officia reiciendis. Culpa enim et accusantium temporibus et. Impedit deleniti vel amet voluptate aut reiciendis. Et velit et consectetur aut distinctio enim non in."
+                },
+                {
+                    "img": "./images/benefit-2.png",
+                    "desc": "Occaecati maxime ullam sit libero voluptas rem rerum quam sed. Voluptatibus et perspiciatis consectetur. Minima facere cum beatae fugit et laboriosam molestias dolor. Et corporis consequatur."
+                },
+                {
+                    "img": "./images/benefit-2.png",
+                    "desc": "Labore reprehenderit itaque. Assumenda veniam excepturi. Necessitatibus magni cum suscipit sed accusamus. Ipsa sit excepturi sunt optio architecto. Veritatis occaecati accusamus eos vitae perferendis cumque qui odio ea. Quas sint ut est quam quia odit officiis repellat."
+                }
+            ]
+        },
+        "footer" : {
+            "links" : [
+                {
+                    "title": "Ergonomic",
+                    "list" : ["Table", "Cheese", "Keyboard", "Table"]
+                },
+                {
+                    "title": "Handmade",
+                    "list" : ["Chair", "Ball", "Chair", "Shoes"]
+                },
+                {
+                    "title": "Awesome",
+                    "list" : ["Bike", "Soap", "Towels", "Bacon"]
+                },
+                {
+                    "title": "Gorgeous",
+                    "list" : ["Sausage", "Chicken", "Tuna", "Towels"]
+                },
+                {
+                    "title": "Tasty",
+                    "list" : ["Chicken", "Pizza", "Bacon", "Shirt"]
+                }
+            ]
+        }
+    }
+    
+}

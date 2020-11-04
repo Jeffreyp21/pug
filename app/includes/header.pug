@@ -3,28 +3,26 @@
 //- and not '../images/image.jpg'
 //- img(src='./images/js-logo.svg' alt='js logo' width='200')
 
-- var list = [{'titre':'jewelery', 'url':'#'},{'titre':'books', 'url':'#'},{'titre':'grocery', 'url':'#'},{'titre':'movies', 'url':'#'}]
+//- - var list = [{'titre':'jewelery', 'url':'#'},{'titre':'books', 'url':'#'},{'titre':'grocery', 'url':'#'},{'titre':'movies', 'url':'#'}]
+- var json = data
 header
-  .block
+  .block 
       .hero.is-primary
           .hero-body
-
               .block
                   .navbar
                       .navbar-start
-                          //- a.nav-itm: img(src="https://img-corp.net/assets/img/IMG_logo_big_blue.png", title="image" )
                           a.nav-item: img(src="./images/logo.png", title="image" )
                       .navbar-end
                           ul
-                              each item in list
+                              each item in json.hero.links   
                                   li 
-                                    a(href='#{item.url}') #{item.titre}
-                                      
+                                    a(href=item.url) #{item.title}              
               #block
                   .container
                       .columns
                           .column
                           .column.is-two-fifths
-                              .title.is-1.has-text-centered Choose your side
-                              .content.has-text-centered  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu efficitur mi, sit amet maximus lacus. Cras vestibulum mauris eget imperdiet volutpat. Maecenas bibendum, mauris sit amet dapibus venenatis, lorem sem volutpat lacus, ullamcorper fermentum sapien risus gravida felis. Phasellus urna arcu, molestie eget consequat vitae, elementum quis odio. Suspendisse magna elit, ornare tempus luctus a, fringilla sed 
+                              .title.is-1.has-text-centered #{json.hero.title}
+                              .content.has-text-centered  #{json.hero.text}
                           .column

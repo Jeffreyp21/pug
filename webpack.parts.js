@@ -50,7 +50,9 @@ exports.loadPug = (options) => ({
           },
           {
             loader: 'pug-html-loader',
-            options
+            options: {
+              data: require('./app/data/fr.json')
+            }
           }
         ]
       }
@@ -262,7 +264,9 @@ exports.page = ({
       filename: `${path && path + '/'}index.html`,
       template,
       title,
-      chunks
+      chunks,
+      inject: true,
+      data: require('./app/data/fr.json')
     })
   ]
 })
