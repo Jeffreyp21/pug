@@ -14,7 +14,7 @@ body {
   background-color: $red!important;
   padding-bottom: 6vh;
   @media screen and (min-width: $tablet) { 
-    padding-bottom: 10vh;
+    // padding-bottom: 10vh;
     // max-width: 400px;
   }
   .hero-body{padding: 1rem 1.5rem 3;}
@@ -49,7 +49,7 @@ body {
   margin: -18vh auto;
   @media screen and (min-width: $tablet) { 
     margin: -13vh auto;
-    max-width: 400px;
+    // max-width: 400px;
   }
 }
 
