@@ -12,6 +12,7 @@ body {
 .hero {
   background-color: $red!important;
   padding-bottom: 10vh;
+  .hero-body{padding: 1rem 1.5rem 3;}
   .navbar-start {
     text-align: center;
   }
@@ -32,6 +33,11 @@ body {
           }
       }
   }
+  .is-two-fifths{
+    @media screen and (min-width: $tablet) { 
+      max-width: 400px;
+    }
+  }
 }
 
 .falcon {
@@ -39,8 +45,16 @@ body {
 }
 
 .howitwork {
-  .content.has-text-centered {
+  .is-two-fifths{
     margin-bottom: 40px;
+    @media screen and (min-width: $tablet) { 
+      max-width: 400px;
+    }
+  }
+  .content.has-text-centered.item {
+    max-width: 167px;
+    margin: 0 auto 20px;
+    text-align: center;
   }
   .title.is-4 {
     margin: 10px;
@@ -51,16 +65,29 @@ body {
   background-color: $grey;
   padding: 40px 0;
   margin-bottom: 0;
+  .is-two-fifths{
+    margin-bottom: 80px;
+    @media screen and (min-width: $tablet) { 
+      max-width: 400px;
+    }
+  }
   .column {
     text-align: center;
     
   }
+  img{
+    max-width: 279px;
+    margin: 0 auto;
+  }
   .content {
     margin-top: 30px;
+    @media screen and (min-width: $tablet) { 
+      max-width: 480px;
+    }
   }
 
   .container.small {
-    max-width:900px!important;
+    max-width:940px!important;
     margin: 0 auto;
     padding: 0 15px;
 
@@ -95,11 +122,29 @@ footer {
   .links {
     display: inline-block;
     margin: 0 2.5%;
-    text-align: center;
+    text-align: left;
 
-    .is-5 {font-weight: bold;}
+    .is-5 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 15px;
+      }
+    }
   }
   .tile.is-vertical {
     text-align: center;
+
+    img{
+      padding-left: 30px;
+    }
+  }
+  .tile.is-vertical .is-8{
+    @media screen and (min-width: $tablet) { 
+      text-align: left;
+    }
   }
 }

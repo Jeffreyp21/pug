@@ -5,7 +5,7 @@
             .column
             .column.is-two-fifths
                 .title.is-2.has-text-centered #{json.howitwork.title}
-                .content.has-text-centered  #{json.hero.text}
+                .content.has-text-centered  #{json.howitwork.text}
             .column
 
     .container
@@ -15,6 +15,6 @@
                     figure.is-128by128.has-text-centered
                         img(src=item.img, alt="")
                     .title.is-4.has-text-centered #{item.title}
-                    .content.has-text-centered #{item.desc}
+                    .content.has-text-centered.item #{item.desc}
             
         
